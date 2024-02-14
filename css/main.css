@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap");
+:root {
+  --black-color: #000000;
+  --white: #fff;
+  --p-color: #c3c3c3;
+  --danger: #a81f33;
+  --green_hover: #7da068;
+  --main-color: rgb(68, 77, 139);
+  --blue: #0d6efd;
+  --back: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+  --black: rgb(251, 245, 236);
+}
+* {
+  --transition: 0.4s;
+}
+
+body {
+  direction: rtl;
+  background-color: var(--black);
+  font-family: "Cairo", sans-serif;
+  /* color: #777; */
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.text-head {
+  color: var(--white);
+  font-size: 25px;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: var(--blue);
+  width: fit-content;
+  margin: 15px auto;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+/* ================== */
+/* navbar */
+.nav-top .box h6 {
+  margin-right: 10px;
+}
+.navbar .navbar-brand img {
+  width: 80px !important;
+}
+.navbar .nav-item {
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.navbar .nav-item .nav-link::before {
+  content: "";
+  position: absolute;
+  background-color: var(--main-color);
+  width: 100%;
+  transition: 0.4s;
+  height: 2px;
+  bottom: 0;
+  left: -100%;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.navbar .nav-item .nav-link:hover::before {
+  left: 0;
+}
+/* navbar */
+
+/* landingPage */
+.landpage {
+  /* background-image: url(../image/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  padding-top: 80px;
+}
+.landpage .text h1 {
+  color: var(--white);
+}
+.landpage .text p {
+  color: var(--p-color);
+}
+.landpage .image img {
+  width: 500px;
+  max-width: 100%;
+}
+/* landingPage */
+/* aboutUs */
+.about_us .image img {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+}
+/* aboutUs */
+.features .card {
+  max-height: 400px;
+  min-height: 400px;
+  margin-top: 7px;
+}
+.features .card img {
+  height: 200px;
+}
+/* ourmission2 */
+.ourmission2 img {
+  width: 100%;
+  max-width: 100%;
+  height: 400px;
+}
+/* ourmission2 */
+/* objectives */
+.objectives .image {
+  min-height: 450px;
+  max-height: 450px;
+}
+.objectives .image img {
+  width: 100%;
+  max-width: 100%;
+}
+/* categorires */
+.categorires .box img {
+  width: 150px;
+  height: 150px;
+}
+/* categorires */
+/* prices */
+.prices .card {
+  max-height: 1000px !important;
+}
+/* prices */
+/* footer */
+.footer .logo img {
+  width: 100px;
+  /* height: 250px; */
+}
